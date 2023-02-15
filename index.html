@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Rock Paper Scissors</title>
 </head>
+
 <body>
-    <div class="container">
-        <button id="rock">R</button>
-        <button id="paper">P</button>
-        <button id="scissors">S</button>
+    <div class="start-container">
+        <h1 class="title">Rock Paper Scissors</h1>
+        <p class="guide">Rock beats Scissors. </br> Paper beats Rock.</br> Scissors beat Paper.</br> First to 5 points wins!</p>
+        <button class="start-btn">START</button>
+    </div>
+    <div class="game-container hidden">
+        <div class="scoreboard">
+            <span class="player-score">Player Score: 0</span>
+            <span class="computer-score">Computer Score: 0</span>
+        </div>
+        <div class="game-btn">
+            <button id="rock">R</button>
+            <button id="paper">P</button>
+            <button id="scissors">S</button>
+        </div>
+        <div class="round-result-container">
+            <p class="pStatus"></p>
+        </div>
+    </div>
+    <div class="outcome-container hidden">
+        <h2 class="h2Result"></h2>
+        <button class="restart hidden">RESTART</button>
     </div>
     <script src="./script.js"></script>
 </body>

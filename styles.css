@@ -1,0 +1,59 @@
+@font-face {
+    font-family: customFont;
+    src: url(./css/fonts/web_fonts/specialelite_regular_macroman/SpecialElite-webfont.woff) format('woff');
+}
+
+*{
+    font-family: customFont;
+    font-size: 75px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./css/images/natural-recycled-paper-texture-background_118047-8916.avif);
+}
+
+.start-container, .game-container, .outcome-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    min-height: 100vh;
+}
+
+.title{
+    font-size: 38px;
+}
+
+.guide {
+    font-size: 28px;
+}
+
+button{
+    font-size: 28px;
+    width: 300px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: rgba(219, 143, 73, 0.3);
+}
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px)
+{
+    *{
+        font-size: 20px;
+    }
+    .title {
+        font-size: 35px
+    }
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+}
